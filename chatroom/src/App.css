@@ -1,0 +1,118 @@
+.App {
+  width: 100%;
+  height:100%;
+  display: flex;
+}
+.CreateRoom{
+  width: 15%;
+  background-color: rgb(38, 38, 38);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.ChatContent{
+  width: 70%;
+  height: 100vh;
+}
+.CreateRoomWindow{
+  background-color: white;
+  height: 150px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: relative;
+}
+.CreateRoomButtons{
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content:space-around;
+}
+.CreateRoomText{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.showError{
+  transition: opacity 1s;
+  opacity:1;
+  color:red;
+}
+.noShowError{
+  transition: opacity 1s;
+  opacity:0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.links{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  left: 200px;
+  cursor: pointer;
+}
+.roomlists{
+  width: 80%;
+  display: flex;
+  align-items:flex-end;
+  position: relative;
+}
+.roomtext{
+  margin-left: 20px;
+}
+.createRoom{
+
+}
+.delete{
+  position: absolute;
+  left: 280px;
+}
+.blackline{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid black;
+}
+.messages{
+  overflow-y: scroll;
+  border-bottom: 1px solid black;
+}
+.textarea{
+  width: 100%;
+  height: 135px;
+  overflow-y: scroll;
+}
+.username{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sendMessages{
+  display: flex;
+}
+.submitMessage{
+  height: 100px;
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.submitMessage:hover{
+  background-color: darkblue;
+}
+.hideWarning{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.showWarning{
+  opacity: 1;
+  transition: opacity 1s;
+  color: red;
+}
